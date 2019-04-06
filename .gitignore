@@ -1,0 +1,9 @@
+node_modules/
+dist/
+server-static/
+!/erver-static/index.html
+/lambda-server/
+!lambda-server/index.js
+!lambda-server/deploy.sh
+server/
+!server/index.html
