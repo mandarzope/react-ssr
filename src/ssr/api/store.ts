@@ -7,7 +7,7 @@ import { actionCreator } from '@/common/helpers';
 const initialStateFromWindow = config.isBrowser ? window.__REDUX_STATE__ : {};
 var sessionStore = {};
 try {
-    sessionStore = JSON.parse(sessionStorage.getItem('arvi:state:arviin'));
+    sessionStore = JSON.parse(sessionStorage.getItem('session:storage:store'));
 } catch (e) {
 
 }
@@ -17,7 +17,7 @@ const storeD = configureStore(reducers({
 
 storeD.dispatch({ type: 'SET_DEVICE' });
 storeD.subscribe(() => {
-    sessionStorage.setItem('arvi:state:arviin', JSON.stringify(storeD.getState()))
+    sessionStorage.setItem('session:storage:store', JSON.stringify(storeD.getState()))
 })
 
 export const store = storeD

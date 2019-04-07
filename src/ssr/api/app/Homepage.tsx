@@ -16,6 +16,9 @@ class Homepage extends Component<any, any> {
     }
     render() {
         return <div>Home Page
+            <svg>
+            <use xlinkHref="#i-home"></use>
+            </svg>
         </div>
     }
 }

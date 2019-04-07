@@ -1,6 +1,6 @@
 import { localStorage } from "./storage";
 
-const token = localStorage.getItem('arvi:ai:token');
+const token = localStorage.getItem('website:token');
 const status = {
     gotToken: false,
     gettingToken: false,
